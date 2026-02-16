@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Modern Habit Tracker</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<h1 id="title">Habit Tracker</h1>
+
+<select id="languageSelect" onchange="changeLanguage()">
+  <option value="ru">Русский</option>
+  <option value="kz">Қазақша</option>
+  <option value="en">English</option>
+</select>
+
+<br>
+
+<input type="text" id="habitInput" placeholder="Введите привычку">
+<button onclick="addHabit()" id="addBtn">Қосу</button>
+<button onclick="toggleTheme()">🌗 Theme</button>
+
+<div id="habitList"></div>
+<div id="calendarTitle"></div>
+<div id="calendar" class="calendar"></div>
+<div id="chart"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
